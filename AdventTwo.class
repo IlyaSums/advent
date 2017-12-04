@@ -1,0 +1,56 @@
+import java.util.*;
+import java.util.regex*;
+public class AdventTwo{
+
+    String puzzleInput;
+    
+    public AdventTwo(String puzzleInput){
+        this.puzzleInput = puzzleInput;
+    }
+    
+    void findAnswerOne(){
+        int answer = 0;
+        
+        Scanner scanner = new Scanner(puzzleInput);
+        
+        while ( scanner.hasNext() ) {
+            String nextLine = scanner.nextLine();
+            String[] numbers = new String[];
+            numbers = nextLine.split();
+            
+             = scanner.nextLine();
+        }
+        
+        if(puzzleInput.charAt(puzzleInput.length()-1)==puzzleInput.charAt(0)){
+            answer += Character.getNumericValue(puzzleInput.charAt(puzzleInput.length()-1));
+        }
+        
+        System.out.println("AnswerOne = "+answer);
+    }
+    
+    // void findAnswerTwo(){
+    //     int answer = 0;
+    //     int half = puzzleInput.length() / 2;
+
+        
+    //     for (int i = 0; i < puzzleInput.length(); i++){
+    //         int halfWay =  (i+1) <= half ? half + i : i - half ;
+    //         if(puzzleInput.charAt(i) == puzzleInput.charAt(halfWay) ){
+    //             answer += Character.getNumericValue(puzzleInput.charAt(i));
+    //         }
+    //     }
+        
+    //     System.out.println("AnswerTwo = "+answer);
+    // }
+
+    public static void main(String []args){
+        AdventTwo MyAdventTwo = new AdventTwo("5 1 9 5
+        7 5 3
+        2 4 6 8");
+        MyAdventOne.findAnswerOne();
+        MyAdventOne.findAnswerTwo();
+        
+    }
+    
+    
+}
